@@ -60,6 +60,14 @@ https://github.com/Lisongte/multimodal-learning
 https://github.com/Lisongte/multimodal-learning.git
 ```
 
+本机首次登录（运行后根据提示在网页输入一次性验证码）：
+
+```bash
+bash scripts/github-login.sh
+```
+
+该脚本使用项目本地官方 GitHub CLI，只修改本仓库的 Git 凭据配置。不要发送验证码之外的令牌或密码到聊天中。
+
 首次推送命令（成功后日常可用同步脚本）：
 
 ```bash
@@ -67,7 +75,7 @@ git push -u origin main
 ```
 
 HTTPS 推送需要受支持的身份验证方式（例如 Git Credential Manager、GitHub CLI 或 PAT）；GitHub 账户密码不能直接用于 Git 推送。
-不要把访问令牌写进远端 URL、代码或聊天记录。当前 Git 使用 macOS Keychain 凭据助手。
+不要把访问令牌写进远端 URL、代码或聊天记录。项目本地 CLI 配置位于已忽略的 `.local/` 目录，不应上传。
 
 ## 学习与 AI coding
 
