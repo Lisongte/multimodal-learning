@@ -1,0 +1,40 @@
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Large datasets, weights, and experiment outputs
+/data/
+/models/
+/checkpoints/
+/runs/
+/wandb/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+*.npy
+*.npz
+*.parquet
+*.zip
+*.tar
+*.gz
+
+# Local OS/editor files
+.DS_Store
+.idea/
+.vscode/
